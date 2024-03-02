@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('vecteezy_a-computer-desktop-wallpaper-for-forex-trading-terminal-ai_22460209.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Set text color to white for better visibility on the background image */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #fff; /* Set label text color to white */
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4300fd00;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #05ffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: #fff;">User Information Form</h2>
+        <form action="#" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+            <small style="color: #fff;"></small>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="1" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
